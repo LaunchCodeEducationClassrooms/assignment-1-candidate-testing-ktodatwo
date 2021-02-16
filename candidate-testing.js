@@ -48,9 +48,9 @@ for(let j=0; j<questions.length; j++){
     console.log(">>>  Status: PASSED  <<<");
   } else {
     console.log(">>>  Status: FAILED  <<<");
-  } 
+  } grade=0;
   return grade;
-  grade=0;
+  
 }
 
 function runProgram() {
