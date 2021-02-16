@@ -41,16 +41,16 @@ for(let j=0; j<questions.length; j++){
   numOfCorrectAnswers++;
   }
 }
-
-  let grade=(numOfCorrectAnswers/questions.length)*100;
+  let grade = 0;
+  grade=(numOfCorrectAnswers/questions.length)*100;
   console.log(`\n>>>  Overall Grade: ${grade}% (${numOfCorrectAnswers} of ${questions.length} responses correct)  <<<`);
   if (grade>=80) {
     console.log(">>>  Status: PASSED  <<<");
   } else {
     console.log(">>>  Status: FAILED  <<<");
-  } grade=0;
-  return grade;
-  
+  } 
+  numOfCorrectAnswers = 0;
+  return grade; 
 }
 
 function runProgram() {
